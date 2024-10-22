@@ -11,6 +11,14 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="/lists">
+        <i class="fa-solid fa-film px-3"></i>
+      </a>
+      <%= link_to "New list", new_list_path, class:"badge badge-light" %>
+    </nav>
+    <div class="container py-3">
+      <%= yield %>
+    </div>
   </body>
 </html>

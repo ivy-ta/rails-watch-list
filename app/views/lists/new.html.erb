@@ -1,0 +1,7 @@
+<h2>Create a New List</h2>
+
+<%= simple_form_for @list do |f| %>
+  <%= f.input :name %>
+  <%= f.button :submit %>
+  <%= link_to "Cancel", root, class: "btn btn-danger" %>
+<% end %>
